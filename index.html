@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center">Productos</h1>
+        <div class="p-4" id="productos-container"></div>
+
+        <main class="mt-4">
+            <div class="mt-5 text-center">
+                <form id="miFormulario">
+                    <label for="nombreCliente">Nombre del Cliente:</label>
+                    <br>
+                    <br>
+                    <input type="text" id="nombreCliente" name="nombreCliente" required>
+                    <br>
+                    <br>
+                    <label for="rutOpcional">¿Ingresar RUT?</label><br>
+                    <input type="checkbox" id="rutOpcional" name="rutOpcional" onchange="mostrarOcultarRUT()"><br>
+
+                    <div id="inputRUT" style="display: none;">
+                        <label for="rut">RUT:</label><br>
+                        <input type="text" id="rut" name="rut">
+                    </div>
+                </form>
+            </div>
+
+            <div id="factura" class="mt-4 text-center">
+                <p id="facturaNombre">Nombre del cliente:</p>             
+                <p id="facturaRUT">RUT:</p>
+                <div id="productos-factura">
+                    <p></p>
+                </div>
+                <p id="total"></p>
+                <button class="btn-submit">Comprar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(150, 150, 250);
+    color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+label{
+    margin-bottom: px;
+}
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+#productos-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px; 
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#productos-container div {
+    margin-bottom: 10px;
+}
+
+#factura {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#fff;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#factura p {
+    margin: 5px 0;
+}
+
+#factura p#total {
+    font-weight: bold;
+}
+
+#productos-factura p {
+    margin: 5px 0;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #0000;
+    background-color: dodgerblue;
+    text-transform: uppercase;
+  }
